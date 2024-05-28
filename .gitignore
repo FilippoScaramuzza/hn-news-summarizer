@@ -1,0 +1,20 @@
+# Python specific #
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environment #
+.env
+venv/
+ENV/
+env.bak/
+env/
+
+# IDE specific #
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Other #
+*.log

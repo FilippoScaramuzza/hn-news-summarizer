@@ -1,0 +1,6 @@
+requests
+tqdm
+colorama
+beautifulsoup4
+lxml
+huggingface_hub
