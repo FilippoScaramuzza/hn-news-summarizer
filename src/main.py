@@ -1,10 +1,9 @@
 import argparse
 import os
-from textwrap import indent
 import requests
 from datetime import datetime
 from tqdm import tqdm
-from colorama import init, Fore, Style
+from colorama import init, Fore
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from news_summary_generator import NewsSummaryGenerator
 from html_content_extractor import HTMLContentExtractor
