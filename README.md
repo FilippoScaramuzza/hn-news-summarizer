@@ -27,38 +27,38 @@ The script then generates an LLM-powered summary using the `mistralai/Mistral-7B
 
 ## Usage
 
-- To run the main script, use:
+To run the main script, use:
 
-    ```bash
-    python src/main.py
-    ```
-    to get the top nwes and then summarize it, or
-    ```bash
-    python src/main.py --id <id>
-    ```
-    to get the summary of a specific news.
+```bash
+python src/main.py
+```
+to get the top nwes and then summarize it, or
+```bash
+python src/main.py --id <id>
+```
+to get the summary of a specific news.
 
-    The output should be something like this:
+The output should be something like this:
 
-    ```bash
-    Processing stories: 100%|███████████████████████████████████████████████████████████████████| 480/480 [00:13<00:00, 35.09it/s]
-    Title: Cloudflare took down our website
-    Score: 928
-    Date: 2024-05-26
-    URL: https://robindev.substack.com/p/cloudflare-took-down-our-website
-    LLM-Powered Summary:
-    {
-        "topic": "Cloudflare Forcing Businesses to Upgrade to Enterprise Plan",
-        "key_points": [
-            "📧 Business received unexpected email from Cloudflare asking to upgrade to Enterprise plan.",
-            "💬 Sales team contacted multiple times, but no clear explanation given.",
-            "🔒 Domains were suddenly taken down after refusal to upgrade.",
-            "💔 Business suffered significant downtime and loss of customer trust.",
-            "💡 Tips for dealing with Cloudflare: be prepared to switch, don't use custom caching rules, and make backups."
-        ],
-        "reading_time": "3 minutes"
-    }
-    ```
+```bash
+Processing stories: 100%|███████████████████████████████████████████████████████████████████| 480/480 [00:13<00:00, 35.09it/s]
+Title: Cloudflare took down our website
+Score: 928
+Date: 2024-05-26
+URL: https://robindev.substack.com/p/cloudflare-took-down-our-website
+LLM-Powered Summary:
+{
+    "topic": "Cloudflare Forcing Businesses to Upgrade to Enterprise Plan",
+    "key_points": [
+        "📧 Business received unexpected email from Cloudflare asking to upgrade to Enterprise plan.",
+        "💬 Sales team contacted multiple times, but no clear explanation given.",
+        "🔒 Domains were suddenly taken down after refusal to upgrade.",
+        "💔 Business suffered significant downtime and loss of customer trust.",
+        "💡 Tips for dealing with Cloudflare: be prepared to switch, don't use custom caching rules, and make backups."
+    ],
+    "reading_time": "3 minutes"
+}
+```
 
 
 ## Contributing
