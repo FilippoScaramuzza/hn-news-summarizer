@@ -12,10 +12,10 @@ class NewsSummaryGenerator:
         #         content += content
 
         input_prompt = f'''
-        <s>[INST] You are a helpful news summarizer assistant. Your task is to generate a valid JSON object based on the summary of the given news. 
-        The fields must be just: topic, key_points (add relevant emojis to enhance the readibility) and reading_time.
-        Your ouput must be just the JSON object, so starting with a {{ and ending with a }}. Don't write anything but just the produced JSON object.
-        So for instance the following:
+<s>[INST] You are a helpful news summarizer assistant. Your task is to generate a valid JSON object based on the summary of the given news. 
+The fields must be just: topic, key_points (add relevant emojis to enhance the readibility) and reading_time.
+Your ouput must be just the JSON object, so starting with a {{ and ending with a }}. Don't write anything but just the produced JSON object.
+So for instance the following:
 
  ICQ Sign In Eng Eng Rus ICQ will stop working from June 26 You can chat with friends in VK Messenger, and with colleagues in VK WorkSpace
 

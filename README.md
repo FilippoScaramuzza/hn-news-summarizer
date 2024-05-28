@@ -24,7 +24,10 @@ The script then generates an LLM-powered summary using the `mistralai/Mistral-7B
     ```bash
     pip install -r requirements.txt
     ```
-
+4. **Configure your HF_API_TOKEN**
+    ```bash
+    export HF_API_TOKEN="<your hugging face api token>"
+    ```
 ## Usage
 
 To run the main script, use:

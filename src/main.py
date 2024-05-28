@@ -1,4 +1,5 @@
 import argparse
+import os
 from textwrap import indent
 import requests
 from datetime import datetime
@@ -50,6 +51,7 @@ def get_highest_score_story(stories):
 
 def main(args):
     try:
+        api_token = os.environ.get('HF_API_TOKEN')  # Retrieve API token from environment
         if args.id:
             highest_score_story = get_item(args.id)
         else:
@@ -64,7 +66,7 @@ def main(args):
 
             # Initialize the NewsSummaryGenerator
             generator = NewsSummaryGenerator(model_name="mistralai/Mistral-7B-Instruct-v0.2", 
-                                             api_token="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")
+                                             api_token=api_token)
             # Get the website content and generate the summary
             summary = generator.generate_summary(get_website(highest_score_story.get('url'))) if highest_score_story.get('url') else "No URL"
             
